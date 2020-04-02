@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
-    <title>A/V Accessibility Research</title>
-</head>
-<body>
-    
-    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://vjs.zencdn.net/7.7.5/video-js.css" rel="stylesheet"/>
+        <title>Document</title>
+              
+      </head>
+      
+      <body>
+        <header><h1>A/V Accessibility Research</h1></header>
 
-</body>
+    <div id="movie">
+        <h2>Rear Window (1954)</h2>
+        <video
+          id="my-video"
+          class="video-js"
+          controls
+          preload="auto"
+          width="854"
+          height="480"
+          poster="/video/movie-poster.jpg"
+          data-setup="{}"
+        >
+          <source src="/video/RearWindow1954.mp4" type="video/mp4" />
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a
+            web browser that
+            <a href="https://videojs.com/html5-video-support/" target="_blank"
+              >supports HTML5 video</a
+            >
+          </p>
+        </video>
+    </div>
+      
+        <script src="https://vjs.zencdn.net/7.7.5/video.js"></script>
+        <script src="js/main.js"></script>
+      </body>
 </html>
-
-<script src="js/main.js"></script>
